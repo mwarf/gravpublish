@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+                <meta charset="utf-8" />
+        <title>User Login | Grav</title>
+        <meta name="generator" content="GravCMS" />
+<meta name="description" content="Grav is an easy to use, yet powerful, open source flat-file CMS" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="icon" type="image/png" href="" />
+
+                                                                                            
+                <link href="http://mwarf.github.io/gravpublish/user/plugins/markdown-notices/assets/notices.css" type="text/css" rel="stylesheet" />
+<link href="http://mwarf.github.io/gravpublish/user/plugins/form/assets/form-styles.css" type="text/css" rel="stylesheet" />
+<link href="http://mwarf.github.io/gravpublish/user/plugins/login/css/login.css" type="text/css" rel="stylesheet" />
+<link href="http://mwarf.github.io/gravpublish/user/themes/bootstrap4/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+<link href="http://mwarf.github.io/gravpublish/user/themes/bootstrap4/css/line-icons.css" type="text/css" rel="stylesheet" />
+<link href="http://mwarf.github.io/gravpublish/user/themes/bootstrap4/css/slicknav.css" type="text/css" rel="stylesheet" />
+<link href="http://mwarf.github.io/gravpublish/user/themes/bootstrap4/css/nivo-lightbox.css" type="text/css" rel="stylesheet" />
+<link href="http://mwarf.github.io/gravpublish/user/themes/bootstrap4/css/animate.css" type="text/css" rel="stylesheet" />
+<link href="http://mwarf.github.io/gravpublish/user/themes/bootstrap4/css/main.css" type="text/css" rel="stylesheet" />
+<link href="http://mwarf.github.io/gravpublish/user/themes/bootstrap4/css/responsive.css" type="text/css" rel="stylesheet" />
+
+                <script type="text/javascript" src="//maps.googleapis.com/maps/api/js?key=AIzaSyCsa2Mi2HqyEcEnM1urFSIGEpvualYjwwM"></script>
+    </head>
+    <body>    <!-- Header Area wrapper Starts -->
+        <header id="header-wrap">
+                        <!-- Navbar Start -->
+<nav class="navbar navbar-dark bg-inverse">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        <span class="icon-menu"></span>
+        <span class="icon-menu"></span>
+        <span class="icon-menu"></span>
+      </button>
+      <a class="navbar-brand" href="http://mwarf.github.io/gravpublish">
+          <img src="http://mwarf.github.io/gravpublish/user/themes/bootstrap4/images/UofL_Logo_Vertical_reverse.svg" alt="">
+                        </a>
+    </div>
+
+
+
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav pull-right">
+                                                            <li class="nav-item nav-item-toggable ">
+              <a class="nav-link" href="http://mwarf.github.io/gravpublish">
+                  Home<span class="sr-only">(current)</span>
+              </a>
+          </li>
+                                                                                
+                                        <li class="nav-item nav-item-toggable ">
+              <a class="nav-link" href="login">
+                  Login
+              </a>
+          </li>
+                          </ul>
+    </div>
+  </div>
+
+  <!-- Mobile Menu Start -->
+  <ul class="mobile-menu">
+                                    <li class="nav-item nav-item-toggable ">
+          <a class="nav-link" href="http://mwarf.github.io/gravpublish">
+              Home<span class="sr-only">(current)</span>
+          </a>
+      </li>
+                                                  </ul>
+
+  <!-- Mobile Menu End -->
+
+</nav>
+<!-- Navbar End -->
+                  </header>
+        <!-- Header Area wrapper End -->
+                        <section id="grav-login">
+
+    
+                    
+
+            <form method="post" action="/login" class="">
+                
+                                                                                
+
+    <div class="form-field   ">
+                                    <div class="form-label ">
+                    <label class="inline" for="username"  >
+                                                                                                        Username
+                                                    
+                        
+                                        </label>
+                </div>
+                        <div class="form-data "
+                                data-grav-field="text"
+                data-grav-disabled="true"
+                data-grav-default="null"
+                            >
+                                                            <div class="form-input-wrapper  ">
+                                                        <input
+                                                                name="username"
+                                value=""
+                                                                    type="text"
+                                        class=" form-control form-control-lg"
+                                    id="username"                                                                                                             placeholder="Username"                                    autofocus="autofocus"                                                                                                                                                                                                                                                                                            
+                            />
+                                                                                    </div>
+                    
+                                
+            </div>
+            </div>
+                                                                                                    
+
+    <div class="form-field   ">
+                                    <div class="form-label ">
+                    <label class="inline" for="password"  >
+                                                                                                        Password
+                                                    
+                        
+                                        </label>
+                </div>
+                        <div class="form-data "
+                                data-grav-field="password"
+                data-grav-disabled="false"
+                data-grav-default="null"
+                            >
+                                                            <div class="form-input-wrapper  ">
+                                                        <input
+                                                                name="password"
+                                value=""
+                                                                    type="password"
+    class="input"
+                                        class=" form-control form-control-lg"
+                                    id="password"                                                                                                             placeholder="Password"                                                                                                                                                                                                                                                                                                                                
+                            />
+                                                                                </div>
+                                                    
+            </div>
+            </div>
+                                    
+                <div class="form-actions secondary-accent">
+                                            <div class="form-data rememberme" data-grav-default="null" data-grav-disabled="true" data-grav-field="checkbox">
+                            <div class="form-input-wrapper">
+                                <input type="checkbox" value="1" name="rememberme" id="#rememberme">
+                                <label class="inline" for="#rememberme" title="Sets a persistent cookie on your browser to allow persistent-login authentication between sessions.">Remember Me</label>
+                            </div>
+                        </div>
+                    
+                                        <a class="button secondary" href="/forgot_password"><i class="fa fa-exclamation-circle"></i> Forgot</a>
+                    
+                    <button class="button primary" type="submit"  name="task" value="login.login"><i class="fa fa-sign-in"></i> Login</button>
+                </div>
+
+                <input type="hidden" name="login-form-nonce" value="b314f73c88ebd9a0004a5ca671d4b5ae" />
+            </form>
+
+        
+    
+</section>
+        
+        
+        <div id="copyright">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="site-info">
+                  <p>© Designed and Developed by <a href="#" rel="nofollow">Digital Services & UIDeck</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Go to Top Link -->
+        <a href="#" class="back-to-top">
+        	<i class="lni-chevron-up"></i>
+        </a>
+
+        <div id="preloader">
+          <div class="sk-circle">
+            <div class="sk-circle1 sk-child"></div>
+            <div class="sk-circle2 sk-child"></div>
+            <div class="sk-circle3 sk-child"></div>
+            <div class="sk-circle4 sk-child"></div>
+            <div class="sk-circle5 sk-child"></div>
+            <div class="sk-circle6 sk-child"></div>
+            <div class="sk-circle7 sk-child"></div>
+            <div class="sk-circle8 sk-child"></div>
+            <div class="sk-circle9 sk-child"></div>
+            <div class="sk-circle10 sk-child"></div>
+            <div class="sk-circle11 sk-child"></div>
+            <div class="sk-circle12 sk-child"></div>
+          </div>
+        </div>
+
+                                                                                                                                                        
+                <script src="http://mwarf.github.io/gravpublish/user/themes/bootstrap4/js/jquery-min.js" ></script>
+<script src="http://mwarf.github.io/gravpublish/user/themes/bootstrap4/js/popper.min.js" ></script>
+<script src="http://mwarf.github.io/gravpublish/user/themes/bootstrap4/js/bootstrap.min.js" ></script>
+<script src="http://mwarf.github.io/gravpublish/user/themes/bootstrap4/js/jquery.countdown.min.js" ></script>
+<script src="http://mwarf.github.io/gravpublish/user/themes/bootstrap4/js/jquery.slicknav.js" ></script>
+<script src="http://mwarf.github.io/gravpublish/user/themes/bootstrap4/js/nivo-lightbox.js" ></script>
+<script src="http://mwarf.github.io/gravpublish/user/themes/bootstrap4/js/form-validator.min.js" ></script>
+<script src="http://mwarf.github.io/gravpublish/user/themes/bootstrap4/js/contact-form-script.min.js" ></script>
+<script src="http://mwarf.github.io/gravpublish/user/themes/bootstrap4/js/main.js" ></script>
+<script src="http://mwarf.github.io/gravpublish/user/themes/bootstrap4/js/wow.js" ></script>
+
+    </body>
+</html>
